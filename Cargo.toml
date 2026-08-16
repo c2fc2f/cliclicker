@@ -31,6 +31,11 @@ missing_errors_doc = "warn"
 missing_panics_doc = "warn"
 
 [dependencies]
-evdev = "0.13"
+evdev = { version = "0.13", features = ["serde"] }
 clap = { version = "4.4", features = ["derive"] }
 anyhow = "1"
+toml = "1.1.4"
+serde = { version = "1", features = ["derive"] }
+rand = "0.10"
+rand_distr = "0.6"
+noise = "0.9.0"

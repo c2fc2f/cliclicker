@@ -1,0 +1,25 @@
+name = "Gaming chair"
+device = "/dev/input/by-id/usb-Logitech_USB_Receiver-if02-event-mouse"
+trigger = "KEY_F8"
+target = "BTN_LEFT"
+cps = 15 
+
+[[random]]
+delay = { start = 0, end = 25 } 
+[random.distribution]
+type = "log_normal"
+mean = 0.5
+std_dev = 1.0
+
+[[random]]
+delay = { start = 0, end = 20 } 
+[random.distribution]
+type = "fbm"
+frequency = 0.5
+octaves = 4
+
+[[random]]
+delay = { start = 30, end = 85 } 
+[random.distribution]
+type = "outlier"
+probability = 0.05
