@@ -162,7 +162,7 @@ type = "outlier"
 probability = 0.05
 ```
 
-This example uses `KEY_F8` (a keyboard key) as the trigger instead of a mouse button, and stacks three randomization layers: a log-normal jitter, an fBm drift, and an occasional 5%-chance outlier pause. See [`exemples/config.toml`](exemples/config.toml).
+This example uses `KEY_F8` (a keyboard key) as the trigger instead of a mouse button, and stacks three randomization layers: a log-normal jitter, an fBm drift, and an occasional 5%-chance outlier pause. See [`examples/config.toml`](examples/config.toml).
 
 ## License
 
